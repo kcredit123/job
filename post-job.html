@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post a Job - Programming Jobs Board</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Programming Jobs Board</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="post-job.html">Post a Job</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="post-job">
+            <h2>Post a Programming Job</h2>
+            <form id="post-job-form">
+                <label for="company">Company Name</label>
+                <input type="text" id="company" name="company" required>
+
+                <label for="job-title">Job Title</label>
+                <input type="text" id="job-title" name="job-title" required>
+
+                <label for="location">Location</label>
+                <input type="text" id="location" name="location" required>
+
+                <label for="category">Category</label>
+                <select id="category" name="category" required>
+                    <option value="">Select Category</option>
+                    <option value="frontend">Frontend</option>
+                    <option value="backend">Backend</option>
+                    <option value="fullstack">Full Stack</option>
+                    <option value="datascience">Data Science</option>
+                    <option value="devops">DevOps</option>
+                    <option value="mobile">Mobile Development</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="description">Job Description</label>
+                <textarea id="description" name="description" rows="5" required></textarea>
+
+                <label for="requirements">Requirements</label>
+                <textarea id="requirements" name="requirements" rows="3" required></textarea>
+
+                <label for="application-link">Application Link</label>
+                <input type="url" id="application-link" name="application-link" placeholder="https://example.com/apply" required>
+
+                <button type="submit">Post Job</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Programming Jobs Board. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
